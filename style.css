@@ -1,0 +1,72 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.homePage {
+  width: 100vw;
+  height: 100vh;
+}
+
+.homePage::before {
+  content: "";
+  position: absolute;
+  background: url(assets/img/banner.jpg) no-repeat center center/cover;
+  width: 100vw;
+  height: 90vh;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.navbar-custom-cont {
+  padding: 0 0 17px 0;
+  margin: 0 15rem;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(149, 148, 148, 0.308);
+}
+.navbar-brand img{
+  width: 150px;
+}
+.navbar-nav a {
+  color: #b0b0b0d0 !important;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  margin: 0 0 0 45px;
+}
+.hero-cont{
+  text-align: center;
+  padding: 0 17%;
+  margin-top: 8rem;
+}
+.hero-title{
+  font-size: 3.3rem;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+  color: #fffffff2;
+  font-weight: bold;
+  word-spacing: -1px;
+}
+.hero-details{
+  font-size: 1.15rem;
+  color: #fff5ffde;
+  margin-top: 1rem;
+}
+.btn{
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  border-radius: 0.1rem;
+  padding: 10px 40px;
+  font-weight: bold;
+}
