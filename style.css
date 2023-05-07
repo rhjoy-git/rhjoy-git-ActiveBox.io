@@ -12,7 +12,9 @@ html {
   margin: 0;
   padding: 0;
 }
-
+body{
+  overflow-x: hidden;
+}
 .homePage {
   width: 100vw;
   height: 90vh;
@@ -35,9 +37,11 @@ html {
   overflow: hidden;
   border-bottom: 1px solid rgba(149, 148, 148, 0.308);
 }
-.navbar-brand img{
+
+.navbar-brand img {
   width: 150px;
 }
+
 .navbar-nav a {
   color: #e3e1e1d0 !important;
   font-size: 0.7rem;
@@ -47,12 +51,14 @@ html {
 .nav-item {
   margin: 0 0 0 45px;
 }
-.hero-cont{
+
+.hero-cont {
   text-align: center;
   padding: 0 17%;
   margin-top: 8rem;
 }
-.hero-title{
+
+.hero-title {
   font-size: 3.3rem;
   line-height: 3.5rem;
   text-transform: uppercase;
@@ -60,12 +66,14 @@ html {
   font-weight: bold;
   word-spacing: -1px;
 }
-.hero-details{
+
+.hero-details {
   font-size: 1.15rem;
   color: #fff5ffde;
   margin-top: 1rem;
 }
-.btn{
+
+.hero-btn {
   margin-top: 2rem;
   text-transform: uppercase;
   font-size: 0.6rem;
@@ -73,9 +81,108 @@ html {
   padding: 10px 40px;
   font-weight: bold;
 }
-.box{
+
+.box {
   text-align: center;
 }
-.box img{
+
+.box img {
   height: 50px;
+}
+
+
+
+/* ===== Work Start====== */
+.work {
+  position: relative;
+  width: 100%;
+  height: 275px;
+}
+
+.hover-overlay {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(232, 69, 69, 0.9);
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.overlay-caption{
+  color: #fff;
+}
+.work:hover .hover-overlay{
+  opacity: 1;
+}
+.no-gutter{
+  padding-left: 0 0 !important;
+}
+/* ===== Work End====== */
+.card{
+  border: none;
+}
+.card-title{
+  font-weight: 400;
+  font-size: 1.25rem !important;
+}
+.card-body span{
+  font-size: 0.7rem !important;
+}
+.card-text{
+  font-size: 0.8rem !important;
+  font-weight: 500;
+}
+.person img{
+  width: 100% !important;
+  height: 100% !important;
+}
+/* =========================================? */
+.carousel{
+  background-color: rgb(133, 34, 114);
+  height: 100%;
+  width: 100%;
+}
+.carousel-cont{
+  color: #ffffffd7;
+  padding: 65px 0 0 65px;
+  width: 80%;
+}
+.carousel-cont quote{
+  font-style: italic;
+  line-height: 2.75rem;
+  font-size: 2.35rem !important;
+}
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+/* ================================== */
+.testimonial-cont h6{
+  font-size: 0.65rem;
+}
+.ft-cont h5{
+  color: #fff;
+  font-size: 1.2rem;
+}
+.ft-cont address,
+.ft-cont p{
+  font-size: 0.75rem;
+}
+.footer .hero-cont{
+  background-color: #3a3e63;
+}
+.copy-right{
+  background-color: #313455;
+}
+.copy-right p{
+  color: #ffffffd4;
+  font-size: 0.8rem;
 }
