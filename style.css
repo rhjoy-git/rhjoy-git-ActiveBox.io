@@ -12,12 +12,14 @@ html {
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   overflow-x: hidden;
 }
+
 .homePage {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
 }
 
 .homePage::before {
@@ -25,14 +27,14 @@ body{
   position: absolute;
   background: url(assets/img/banner.jpg) no-repeat center center/cover;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   top: 0px;
   left: 0px;
   z-index: -1;
 }
 
 .navbar-custom-cont {
-  padding: 0 0 17px 0;
+  padding: 0 0 12px 0;
   margin: 0 15rem;
   overflow: hidden;
   border-bottom: 1px solid rgba(149, 148, 148, 0.308);
@@ -48,14 +50,10 @@ body{
   font-weight: bold;
 }
 
-.nav-item {
-  margin: 0 0 0 45px;
-}
-
 .hero-cont {
   text-align: center;
   padding: 0 17%;
-  margin-top: 8rem;
+  /* margin-top: 8rem; */
 }
 
 .hero-title {
@@ -68,9 +66,7 @@ body{
 }
 
 .hero-details {
-  font-size: 1.15rem;
   color: #fff5ffde;
-  margin-top: 1rem;
 }
 
 .hero-btn {
@@ -82,21 +78,15 @@ body{
   font-weight: bold;
 }
 
-.box {
-  text-align: center;
-}
-
 .box img {
   height: 50px;
 }
 
 
 
-/* ===== Work Start====== */
+/* ===== Work section Start====== */
 .work {
-  position: relative;
-  width: 100%;
-  height: 275px;
+  height: 42vh;
 }
 
 .hover-overlay {
@@ -114,75 +104,145 @@ body{
   transition: 0.5s;
   overflow: hidden;
 }
-.overlay-caption{
+
+.overlay-caption {
   color: #fff;
 }
-.work:hover .hover-overlay{
+
+.work:hover .hover-overlay {
   opacity: 1;
 }
-.no-gutter{
+
+.no-gutter {
   padding-left: 0 0 !important;
 }
+
 /* ===== Work End====== */
-.card{
+.card {
   border: none;
 }
-.card-title{
+
+.card-title {
   font-weight: 400;
   font-size: 1.25rem !important;
 }
-.card-body span{
+
+.card-body span {
   font-size: 0.7rem !important;
 }
-.card-text{
+
+.card-text {
   font-size: 0.8rem !important;
   font-weight: 500;
 }
-.person img{
+
+.person img {
   width: 100% !important;
   height: 100% !important;
 }
+
 /* =========================================? */
-.carousel{
+.carousel {
   background-color: rgb(133, 34, 114);
   height: 100%;
   width: 100%;
 }
-.carousel-cont{
+
+.carousel-cont {
   color: #ffffffd7;
   padding: 65px 0 0 65px;
   width: 80%;
 }
-.carousel-cont quote{
+
+.carousel-cont quote {
   font-style: italic;
   line-height: 2.75rem;
   font-size: 2.35rem !important;
 }
+
 .carousel-indicators [data-bs-target] {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   margin-bottom: 40px;
 }
+
 /* ================================== */
-.testimonial-cont h6{
+.testimonial-cont h6 {
   font-size: 0.65rem;
 }
-.ft-cont h5{
+
+.ft-cont h5 {
   color: #fff;
   font-size: 1.2rem;
 }
+
 .ft-cont address,
-.ft-cont p{
+.ft-cont p {
   font-size: 0.75rem;
 }
-.footer .hero-cont{
+
+.footer .hero-cont {
   background-color: #3a3e63;
 }
-.copy-right{
+
+.copy-right {
   background-color: #313455;
 }
-.copy-right p{
+
+.copy-right p {
   color: #ffffffd4;
   font-size: 0.8rem;
+}
+
+
+
+
+@media only screen and (max-width: 1400px) {
+
+  .homePage,
+  .homePage::before {
+    height: 100vh !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .homePage,
+  .homePage::before {
+    height: 95vh !important;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .box img {
+    height: 40px !important;
+  }
+
+  .box p {
+    font-size: 0.8rem;
+  }
+
+  .carousel-cont quote {
+    font-style: italic;
+    line-height: normal;
+    font-size: 1.7rem !important;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+
+  .homePage,
+  .homePage::before {
+    height: 80vh !important;
+  }
 }
