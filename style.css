@@ -136,11 +136,6 @@ body {
   font-weight: 500;
 }
 
-.person img {
-  width: 100% !important;
-  height: 100% !important;
-}
-
 /* =========================================? */
 .carousel {
   background-color: rgb(133, 34, 114);
@@ -245,4 +240,22 @@ body {
   .homePage::before {
     height: 80vh !important;
   }
+  .card-title{
+    font-size: 1rem !important;
+  }
+  .card-body span{
+    font-size: 0.65rem !important;
+  }
+  .card-text{
+    font-size: 0.6rem !important;
+  }
+  .carousel-cont quote {
+    font-size: 2rem !important;
+
+  }
+  .copy-right p{
+    font-size: 0.65rem !important;
+  }
+
 }
+
