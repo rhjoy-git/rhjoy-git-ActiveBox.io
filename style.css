@@ -28,15 +28,10 @@ body {
   background: url(assets/img/banner.jpg) no-repeat center center/cover;
   width: 100vw;
   height: 100vh;
-  top: 0px;
-  left: 0px;
   z-index: -1;
 }
 
 .navbar-custom-cont {
-  padding: 0 0 12px 0;
-  margin: 0 15rem;
-  overflow: hidden;
   border-bottom: 1px solid rgba(149, 148, 148, 0.308);
 }
 
@@ -48,12 +43,6 @@ body {
   color: #e3e1e1d0 !important;
   font-size: 0.7rem;
   font-weight: bold;
-}
-
-.hero-cont {
-  text-align: center;
-  padding: 0 17%;
-  /* margin-top: 8rem; */
 }
 
 .hero-title {
@@ -81,8 +70,6 @@ body {
 .box img {
   height: 50px;
 }
-
-
 
 /* ===== Work section Start====== */
 .work {
@@ -145,8 +132,6 @@ body {
 
 .carousel-cont {
   color: #ffffffd7;
-  padding: 65px 0 0 65px;
-  width: 80%;
 }
 
 .carousel-cont quote {
@@ -177,7 +162,7 @@ body {
   font-size: 0.75rem;
 }
 
-.footer .hero-cont {
+.footer .ft-container {
   background-color: #3a3e63;
 }
 
@@ -190,14 +175,17 @@ body {
   font-size: 0.8rem;
 }
 
-
-
-
-@media only screen and (max-width: 1400px) {
+/* @media only screen and (max-width: 1400px) {
 
   .homePage,
   .homePage::before {
     height: 100vh !important;
+  }
+} */
+
+@media only screen and (max-width: 1200px) {
+  .carousel-indicators [data-bs-target] {
+    margin-bottom: 10px !important;
   }
 }
 
@@ -209,7 +197,7 @@ body {
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .box img {
@@ -223,14 +211,13 @@ body {
   .carousel-cont quote {
     font-style: italic;
     line-height: normal;
-    font-size: 1.7rem !important;
+    font-size: 2rem !important;
   }
 
   .carousel-indicators [data-bs-target] {
     width: 10px;
     height: 10px;
-    border-radius: 50%;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
 }
 
@@ -240,22 +227,47 @@ body {
   .homePage::before {
     height: 80vh !important;
   }
-  .card-title{
+
+  .card-title {
     font-size: 1rem !important;
   }
-  .card-body span{
+
+  .card-body span {
     font-size: 0.65rem !important;
   }
-  .card-text{
+
+  .card-text {
     font-size: 0.6rem !important;
   }
-  .carousel-cont quote {
-    font-size: 2rem !important;
 
+  .carousel-cont quote {
+    font-size: 1.5rem !important;
   }
-  .copy-right p{
+
+  .copy-right p {
     font-size: 0.65rem !important;
   }
-
 }
 
+@media only screen and (max-width: 500px) {
+  .navbar-brand img {
+    width: 125px;
+  }
+
+  .navbar-custom-cont button {
+    font-size: 0.8rem;
+  }
+
+  .hero-title {
+    font-size: 2.15rem !important;
+    line-height: normal;
+  }
+
+  .carousel-cont quote {
+    font-size: 1.2rem !important;
+  }
+
+  .carousel-cont p {
+    font-size: 0.85rem !important;
+  }
+}
